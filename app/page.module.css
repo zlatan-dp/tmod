@@ -1,0 +1,47 @@
+
+@media (prefers-color-scheme: dark) {
+
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  grid-row-start: 2;
+}
+
+.main li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+a.primary {
+  background: var(--foreground);
+  color: var(--bg-page);
+  gap: 8px;
+}
+
+a.secondary {
+  min-width: 180px;
+}
+
+
+
+/* Enable hover only on non-touch devices */
+/*@media (hover: hover) and (pointer: fine) {*/
+/*  a.primary:hover {*/
+/*    background: var(--button-primary-hover);*/
+/*    border-color: transparent;*/
+/*  }*/
+
+/*  a.secondary:hover {*/
+/*    background: var(--button-secondary-hover);*/
+/*    border-color: transparent;*/
+/*  }*/
+
+/*  .footer a:hover {*/
+/*    text-decoration: underline;*/
+/*    text-underline-offset: 4px;*/
+/*  }*/
+/*}*/
+
