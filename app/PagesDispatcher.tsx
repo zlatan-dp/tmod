@@ -38,10 +38,11 @@ export default function PagesDispatcher() {
     switch (utmContent) {
       default:
         if (window.innerWidth > 760) {
-          window.location.href = "https://google.com";
+          window.location.href =
+            "https://www.figma.com/proto/mLXyPVFWeoms9vfGsoKfld/TMOD---China-Exhibition?page-id=787%3A6127&node-id=743-1666&viewport=7136%2C1703%2C0.28&t=3mb2Jkln4YvumMcL-8&scaling=scale-down&content-scaling=fixed&starting-point-node-id=743%3A1666&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1";
         } else {
           window.location.href =
-            "https://www.figma.com/proto/IPqYG6OD8K3DFNZi4G7aCp/KidsTV---China-Exhibition-Landing?page-id=0%3A1&node-id=392-8384&viewport=880%2C1992%2C0.37&t=0OsH2pOWqAPIGUVt-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=392%3A8384&show-proto-sidebar=1";
+            "https://www.figma.com/proto/mLXyPVFWeoms9vfGsoKfld/TMOD---China-Exhibition?page-id=787%3A6129&node-id=787-1719&viewport=4483%2C936%2C0.17&t=vibmDX4JwVC9W1OO-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=787%3A1719&hotspot-hints=0&show-proto-sidebar=1&disable-default-keyboard-nav=1&hide-ui=1";
         }
     }
   }, [pageEnter]);

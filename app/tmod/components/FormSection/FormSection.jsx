@@ -118,13 +118,21 @@ export default function FormSection() {
         id="contact-us-section"
       >
         <div className="container">
-          <p className="info-text-mob">
-            We believe our partners’ success is our own. We’re committed to
-            supporting your business with flexible solutions, seamless
-            integration, and maximum efficiency. Our experts work closely with
-            you to adapt the KidsTV product to your specific business model,
-            helping you easily leverage its full market potential.
-          </p>
+          <div className="mob-text">
+            <p className="info-text">
+              We believe our partners’ success is our own. We’re committed to
+              supporting your business with flexible solutions, seamless
+              integration, and maximum efficiency. Our experts work closely with
+              you to adapt the TMOD Technology to your specific business model,
+              helping you easily leverage its full market potential.
+            </p>
+            <p className="info-text">
+              Schedule a meeting or demo to explore the commercial opportunities
+              TMOD Technology offers and discuss how we can help your business
+              grow and boost profitability.
+            </p>
+          </div>
+
           <div className="contacts-wrap">
             <div className="conacts-backdrop">
               <form
@@ -230,22 +238,18 @@ export default function FormSection() {
             <h2 className="section-title section-title-mb">
               Feel free to contact us at any time
             </h2>
-            <p className="white-color">
-              KidsTV Service
-              <br />
-              and Support for Partners
-            </p>
-            <p className="info-text first-info-text">
+
+            <p className="info-text">
               We believe our partners’ success is our own. We’re committed to
               supporting your business with flexible solutions, seamless
               integration, and maximum efficiency. Our experts work closely with
-              you to adapt the KidsTV product to your specific business model,
+              you to adapt the TMOD Technology to your specific business model,
               helping you easily leverage its full market potential.
             </p>
-            <p className="info-text second-info-text">
+            <p className="info-text">
               Schedule a meeting or demo to explore the commercial opportunities
-              KidsTV offers and discuss how we can help your business grow and
-              boost profitability.
+              TMOD Technology offers and discuss how we can help your business
+              grow and boost profitability.
             </p>
           </div>
         </div>

@@ -242,14 +242,15 @@ section {
 .contact-us {
   position: relative;
   z-index: 90;
-  background-image: url("/tmod/img/bg-contact-us-mob.jpg");
+  background-color: #000326;
+  /* background-image: url("/tmod/img/bg-contact-us-mob.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: 760px) {
     background-image: url("/tmod/img/bg-contact-us.jpg");
-  }
+  } */
 
   .container {
     display: flex;
@@ -261,15 +262,18 @@ section {
       gap: var(--gap);
     }
 
-    .info-text-mob {
-      font-weight: 400;
-      font-size: clamp(14px, 4vw, 18px);
-      line-height: 133%;
-      letter-spacing: 0.01em;
-      color: var(--white-color);
-
+    .mob-text {
+      max-width: 500px;
+      margin: 0 auto;
       @media (min-width: 760px) {
         display: none;
+      }
+      .info-text {
+        font-weight: 400;
+        font-size: clamp(14px, 4vw, 18px);
+        line-height: 133%;
+        letter-spacing: 0.01em;
+        color: var(--white-color);
       }
     }
 
@@ -544,6 +548,7 @@ section {
         max-width: 480px;
       }
       .info-text {
+        display: none;
         font-weight: 400;
         font-size: clamp(14px, 4vw, 18px);
         line-height: 133%;
@@ -551,25 +556,8 @@ section {
         color: var(--white-color);
 
         @media (min-width: 760px) {
-          font-size: clamp(14px, 1vw, 18px);
-        }
-      }
-
-      .first-info-text {
-        display: none;
-        margin-bottom: 16px;
-        margin-top: clamp(52px, 5.4vw, 104px);
-
-        @media (min-width: 760px) {
           display: block;
-        }
-      }
-
-      .second-info-text {
-        margin-top: clamp(18px, 8.5vw, 44px);
-
-        @media (min-width: 760px) {
-          margin-top: 0;
+          font-size: clamp(14px, 1vw, 18px);
         }
       }
     }
