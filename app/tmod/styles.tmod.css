@@ -47,8 +47,15 @@ textarea {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
-  --black-color: #000326;
+  --black-color: #000;
   --second-black-color: #202020;
   --white-color: #ffffff;
   --accent-color: #008cff;
@@ -67,12 +74,12 @@ body {
   color: var(--black-color);
   text-align: left;
   background-color: var(--white-color);
-  max-width: 1920px;
+  max-width: 760px;
   margin: 0 auto;
 
-  @media (min-width: 760px) {
+  /* @media (min-width: 760px) {
     font-size: clamp(20px, 2vw, 40px);
-  }
+  } */
 }
 
 p,
@@ -99,20 +106,20 @@ img {
 }
 
 section {
-  padding: 12vw 0 15vw 0;
+  padding: min(8vw, 61px) 0 min(16vw, 122px) 0;
 
-  @media (min-width: 760px) {
+  /* @media (min-width: 760px) {
     padding: min(7vw, 146px) 0;
-  }
+  } */
 }
 
 .container {
   max-width: 100%;
-  padding: 0 10vw;
+  padding: 0 min(4.2vw, 32px);
 
-  @media (min-width: 760px) {
+  /* @media (min-width: 760px) {
     padding: 0 min(7vw, 146px);
-  }
+  } */
 }
 
 .link {
@@ -140,15 +147,16 @@ section {
 }
 
 .section-title {
-  font-weight: 600;
-  font-size: clamp(24px, 10vw, 64px);
+  font-weight: 400;
+  font-size: clamp(24px, 6.4vw, 48px);
   line-height: 100%;
   letter-spacing: 0.01em;
-  color: var(--accent-color);
+  color: var(--black-color);
+  text-align: left;
 
-  @media (min-width: 760px) {
+  /* @media (min-width: 760px) {
     font-size: clamp(40px, 4vw, 80px);
-  }
+  } */
 }
 
 .section-title-mb {
@@ -234,6 +242,204 @@ section {
     &.display-none {
       display: none;
     }
+  }
+}
+
+/* video BLOKS*/
+
+.videoblock {
+  padding: 0;
+
+  video {
+    width: 100%;
+    display: block;
+  }
+
+  .videoblock-info {
+    background: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    gap: min(8.8vw, 67px);
+    padding: min(8vw, 61px) min(7.2vw, 55px) min(16vw, 122px) min(7.2vw, 55px);
+
+    .videoblock-title {
+      font-weight: 700;
+      font-size: clamp(24px, 6.4vw, 48px);
+      line-height: 100%;
+      letter-spacing: 0.01em;
+      color: var(--black-color);
+      text-align: center;
+    }
+    .videoblock-text {
+      font-weight: 400;
+      font-size: clamp(18px, 4.6vw, 36px);
+      line-height: 120%;
+      letter-spacing: 0.01em;
+      text-align: center;
+    }
+  }
+}
+
+/* Bento Mini Blocks*/
+
+.bentobox-panel {
+  border-radius: 14px;
+  padding: min(40px, 5.2vw) min(27px, 3.2vw);
+  background: radial-gradient(
+    100% 327.72% at 0% 0%,
+    #002345 0%,
+    #000000 67.31%,
+    #001325 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .bento-title {
+    font-weight: 700;
+    font-size: clamp(12px, 3.5vw, 27px);
+    margin-bottom: min(40px, 5.2vw);
+
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: var(--white-color);
+  }
+
+  .bento-sub-title {
+    font-weight: 700;
+    font-size: clamp(10px, 2.7vw, 21px);
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: var(--white-color);
+  }
+
+  .bento-text {
+    font-weight: 400;
+    font-size: clamp(10px, 2.7vw, 21px);
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--white-color);
+  }
+}
+
+/* HERO SECTION */
+
+.hero {
+  height: 160vw;
+  max-height: 1216px;
+  padding: 0;
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: min(10vw, 80px);
+    align-items: center;
+    justify-content: center;
+
+    .logo-wrap {
+      width: 50vw;
+      max-width: 380px;
+    }
+
+    .hero-text {
+      width: 64%;
+      font-weight: 400;
+      font-size: clamp(24px, 6.4vw, 48px);
+      line-height: 120%;
+      letter-spacing: 0.01em;
+      text-align: center;
+      background: linear-gradient(145deg, #111 0%, #193352 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+/* BENEFITS SECTION */
+
+.bentobox-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1.36fr 1fr 1.36fr;
+  gap: min(27px, 3.5vw);
+  /* height: min(172.3vw, 1310px); */
+  margin-top: min(51px, 5.7vw);
+
+  .panel-1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background: url("/tmod/img/benefits/bg01-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .panel-2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background: url("/tmod/img/benefits/bg02-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .panel-3 {
+    grid-area: 2 / 1 / 3 / 3;
+    background: url("/tmod/img/benefits/bg03-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bento-title,
+    .bento-text {
+      width: 50%;
+    }
+  }
+  .panel-4 {
+    grid-area: 3 / 1 / 4 / 2;
+    background: url("/tmod/img/benefits/bg02-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .panel-5 {
+    grid-area: 3 / 2 / 4 / 3;
+    background: url("/tmod/img/benefits/bg05-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* MODULES SECTION */
+
+.modules {
+  .modules-logo {
+    width: 42vw;
+    max-width: 324px;
+    /* margin-bottom: min(67px, 8.8vw); */
+    margin: 0 auto;
   }
 }
 
