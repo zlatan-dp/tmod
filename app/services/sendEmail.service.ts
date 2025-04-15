@@ -44,21 +44,20 @@ export const sendEmailData = async (data: EmailData): Promise<boolean> => {
       console.log("unable to get token from the server");
       return false;
     }
-    return await sendEmailData(data);
-  } else {
-    if (!response.ok) {
-      console.log(response.statusText);
-      return false;
-    }
-
-    const responseEmail = await response.json();
-
-    if (!responseEmail.sended) {
-      console.log("unable to get session id from step POST");
-      return false;
-    }
-    // console.log("=========", responseEmail);
-
-    return true;
+    await sendEmailData(data);
   }
+  if (!response.ok) {
+    console.log(response.statusText);
+    return false;
+  }
+
+  const responseEmail = await response.json();
+
+  if (!responseEmail.sended) {
+    console.log("unable to get session id from step POST");
+    return false;
+  }
+  // console.log("=========", responseEmail);
+
+  return true;
 };
