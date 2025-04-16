@@ -280,7 +280,40 @@ section {
   }
 }
 
-/* Bento Mini Blocks*/
+/* Modules INFO */
+
+.modules-info {
+  .main-panel {
+    height: 60vw;
+    max-height: 459px;
+    margin-bottom: min(27px, 3.2vw);
+
+    .bento-title,
+    .bento-text {
+      width: 50%;
+    }
+  }
+
+  .modules-info-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: min(27px, 3.2vw);
+
+    .modules-info-item {
+      flex: 1 1 calc(50% - 14px);
+      display: flex;
+      gap: min(13px, 1.7vw);
+      align-items: center;
+
+      .info-icon-wrap {
+        width: min(68px, 8.9vw);
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+/* Bento Mini Blocks */
 
 .bentobox-panel {
   border-radius: 14px;
@@ -440,6 +473,211 @@ section {
     max-width: 324px;
     /* margin-bottom: min(67px, 8.8vw); */
     margin: 0 auto;
+  }
+}
+
+/* RGB SECTION */
+
+.rgb-module {
+  .main-panel {
+    background-image: url("/tmod/img/rgb/rgb-mob.jpg");
+  }
+}
+
+/* LIGHT SECTION */
+
+.light-module {
+  .main-panel {
+    background-image: url("/tmod/img/light/light-mob.jpg");
+    height: 72.7vw;
+    max-height: 553px;
+  }
+}
+
+/* CLIMATE SECTION */
+
+.climate-module {
+  .main-panel {
+    background-image: url("/tmod/img/climate/climate-mob.jpg");
+  }
+}
+
+/* GAS SECTION */
+
+.gas-module {
+  .main-panel {
+    background-image: url("/tmod/img/gas/gas-mob.jpg");
+  }
+}
+
+/* CONTROL SECTION */
+
+.control {
+  background-color: var(--black-color);
+  background-image: url("/tmod/img/control/bg-control-mob.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .container {
+    padding: 0 min(17vw, 130px);
+
+    .control-info-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: min(7vw, 54px);
+
+      .control-title {
+        font-weight: 700;
+        font-size: clamp(24px, 6.4vw, 48px);
+        line-height: 100%;
+        letter-spacing: 0.01em;
+        color: var(--white-color);
+      }
+
+      .control-text {
+        font-weight: 400;
+        font-size: clamp(10px, 2.7vw, 21px);
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #fff;
+      }
+
+      .control-list {
+        display: flex;
+        flex-direction: column;
+        gap: min(7vw, 54px);
+        padding: min(7vw, 54px) 0;
+
+        .control-item {
+          display: flex;
+          gap: min(27px, 3.2vw);
+          align-items: center;
+
+          .control-icon-wrap {
+            width: min(54px, 7.1vw);
+          }
+
+          .control-text {
+            font-weight: 700;
+            font-size: clamp(10px, 2.7vw, 21px);
+            line-height: 120%;
+            letter-spacing: 0.01em;
+          }
+        }
+      }
+
+      .control-logos-list {
+        display: flex;
+        gap: min(18px, 2.3vw);
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+/* TECHNOLOGY SECTION */
+
+.bentobox-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1.36fr 1fr 1.36fr;
+  gap: min(27px, 3.5vw);
+  /* height: min(172.3vw, 1310px); */
+  margin-top: min(51px, 5.7vw);
+
+  .panel-1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background: url("/tmod/img/technology/bg01-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bento-title,
+    .bento-text {
+      width: 50%;
+    }
+  }
+  .panel-2 {
+    grid-area: 2 / 1 / 3 / 2;
+    background: url("/tmod/img/technology/bg02-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .panel-3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background: url("/tmod/img/technology/bg03-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .panel-4 {
+    grid-area: 3 / 1 / 4 / 3;
+    background: url("/tmod/img/technology/bg04-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bento-title,
+    .bento-text {
+      width: 50%;
+    }
+  }
+  .panel-5 {
+    grid-area: 4 / 1 / 5 / 2;
+    background: url("/tmod/img/technology/bg05-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .panel-6 {
+    grid-area: 4 / 2 / 5 / 3;
+    background: url("/tmod/img/technology/bg06-mob.png"),
+      radial-gradient(
+        100% 327.72% at 0% 0%,
+        #002345 0%,
+        #000000 67.31%,
+        #001325 100%
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* FAQ SECTION */
+
+.faq {
+  background: #d9d9d9;
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: min(27px, 3.5vw);
+
+    margin-top: min(51px, 5.7vw);
   }
 }
 
