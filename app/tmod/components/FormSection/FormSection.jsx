@@ -235,7 +235,7 @@ export default function FormSection() {
             </div>
           </div>
           <div className="info-wrap">
-            <h2 className="section-title section-title-mb">
+            <h2 className="contact-title section-title-mb">
               Feel free to contact us at any time
             </h2>
 

@@ -26,6 +26,15 @@ textarea {
   overflow-y: hidden;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat-Regular.ttf");
@@ -686,12 +695,12 @@ section {
 .contact-us {
   position: relative;
   z-index: 90;
-  background-color: #000326;
-  /* background-image: url("/tmod/img/bg-contact-us-mob.jpg");
-  background-position: center;
+  background-color: var(--black-color);
+  background-image: url("/tmod/img/control/bg-control-mob.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
+  /*
   @media (min-width: 760px) {
     background-image: url("/tmod/img/bg-contact-us.jpg");
   } */
@@ -714,8 +723,8 @@ section {
       }
       .info-text {
         font-weight: 400;
-        font-size: clamp(14px, 4vw, 18px);
-        line-height: 133%;
+        font-size: clamp(10px, 2.7vw, 21px);
+        line-height: 150%;
         letter-spacing: 0.01em;
         color: var(--white-color);
       }
@@ -740,12 +749,8 @@ section {
         padding: clamp(20px, 2vw, 40px);
         border-radius: 20px;
         width: 100%;
-        max-width: 360px;
+        max-width: 521px;
         background-color: var(--white-color);
-
-        @media (min-width: 760px) {
-          max-width: 521px;
-        }
 
         .contact-form-style {
           .inputs-wrap {
@@ -987,7 +992,11 @@ section {
     }
 
     .info-wrap {
-      .section-title {
+      .contact-title {
+        font-weight: 700;
+        font-size: clamp(24px, 6.4vw, 48px);
+        line-height: 100%;
+        letter-spacing: 0.01em;
         color: var(--white-color);
         max-width: 480px;
       }
