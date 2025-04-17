@@ -117,23 +117,32 @@ export default function TmodLanding() {
       <section className="hero">
         <div className="container">
           <div className="logo-wrap">
-            <img src="/tmod/img/logo-mob.png" alt="logo" />
+            <img src="/tmod/img/logo.png" alt="logo" />
           </div>
           <h1 className="hero-text">
             A New Frontier in&nbsp;TV Innovations and Accessories
           </h1>
+          <div className="icon-wrap">
+            <img src="/tmod/img/icon-arrow-down.svg" alt="arrow-down" />
+          </div>
         </div>
       </section>
 
       <section className="videoblock">
         <video autoPlay muted playsInline loop>
-          <source src="/tmod/video/tmod-mob.mp4" type="video/mp4" />
+          <source
+            media="(max-width: 759px)"
+            src="/tmod/video/tmod-mob.mp4"
+            type="video/mp4"
+          />
+          <source src="/tmod/video/tmod.mp4" type="video/mp4" />
         </video>
         <div className="videoblock-info">
           <h2 className="videoblock-title">TMOD Technology</h2>
           <p className="videoblock-text">
-            is a central hub for new kinds of TV accessories, created for
-            comfort, safety and information
+            is a central hub for new kinds of
+            <br /> TV accessories, created for comfort,
+            <br /> safety and information
           </p>
         </div>
       </section>
@@ -141,50 +150,63 @@ export default function TmodLanding() {
       <section className="benefits">
         <div className="container">
           <h2 className="section-title">Main Benefits of TMOD Integrations</h2>
-          <div className="bentobox-1">
-            <div className="bentobox-panel panel-1">
-              <h3 className="bento-title">
-                TV as a central hub for IoT and the Smart Home
-              </h3>
-              <p className="bento-text">
-                Offer a cutting-edge TV with modules like lighting, climate
-                control, and security.
-              </p>
+          <div className="bentobox-1 default">
+            <div className="bento-item bento-item-1">
+              <div className="bentobox-panel panel-1">
+                <h3 className="bento-title">
+                  TV as a central hub for IoT and the Smart Home
+                </h3>
+                <p className="bento-text">
+                  Offer a cutting-edge TV with modules like lighting, climate
+                  control, and security.
+                </p>
+              </div>
             </div>
-            <div className="bentobox-panel panel-2">
-              <h3 className="bento-title">
-                Upselling potential and revenue growth
-              </h3>
-              <p className="bento-text">
-                Unlike usual TV accessories, modules can be provided to end
-                customers after TV was sold. Either by adding more modules to
-                initial sales or upgrading their versions over the years.
-              </p>
+            <div className="bento-item bento-item-2">
+              <div className="bentobox-panel panel-2">
+                <h3 className="bento-title">
+                  Upselling potential and revenue growth
+                </h3>
+                <p className="bento-text">
+                  Unlike usual TV accessories, modules can be provided to end
+                  customers after TV was sold. Either by adding more modules to
+                  initial sales or upgrading their versions over the years.
+                </p>
+              </div>
             </div>
-            <div className="bentobox-panel panel-3">
-              <h3 className="bento-title">
-                Unique product with extra functions and USPs
-              </h3>
-              <p className="bento-text">
-                Differentiate your brand with actually unique selling point.
-              </p>
+            <div className="bento-item bento-item-3">
+              <div className="bentobox-panel panel-3">
+                <h3 className="bento-title">
+                  Unique product with extra functions and USPs
+                </h3>
+                <p className="bento-text">
+                  Differentiate your brand with actually unique selling point.
+                </p>
+              </div>
             </div>
-            <div className="bentobox-panel panel-4">
-              <h3 className="bento-title">Boosting ASP and increasing sales</h3>
-              <p className="bento-text">
-                Modules - are separately sold devices, which provides higher
-                average sales price for the TV kit and adds flexibility of
-                proposition for various target audiences.
-              </p>
+            <div className="bento-item bento-item-4">
+              <div className="bentobox-panel panel-4">
+                <h3 className="bento-title">
+                  Boosting ASP and increasing sales
+                </h3>
+                <p className="bento-text">
+                  Modules - are separately sold devices, which provides higher
+                  average sales price for the TV kit and adds flexibility of
+                  proposition for various target audiences.
+                </p>
+              </div>
             </div>
-            <div className="bentobox-panel panel-5">
-              <h3 className="bento-title">
-                New marketing opportunities & engagement cause
-              </h3>
-              <p className="bento-text">
-                Tap into a growing market of Smart Home and get an extra
-                opportunity for marketing with new unique tech in your products.
-              </p>
+            <div className="bento-item bento-item-5">
+              <div className="bentobox-panel panel-5">
+                <h3 className="bento-title">
+                  New marketing opportunities & engagement cause
+                </h3>
+                <p className="bento-text">
+                  Tap into a growing market of Smart Home and get an extra
+                  opportunity for marketing with new unique tech in your
+                  products.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -196,14 +218,25 @@ export default function TmodLanding() {
             <img src="/tmod/img/modules/modules-logo-mob.png" alt="logo" />
           </div>
           <div className="modules-wrap">
-            <img src="/tmod/img/modules/modules-frame-mob.png" alt="modules" />
+            <picture>
+              <source
+                media="(max-width: 759px)"
+                srcSet="/tmod/img/modules/modules-frame-mob.png"
+              />
+              <img src="/tmod/img/modules/modules-frame.png" alt="modules" />
+            </picture>
           </div>
         </div>
       </section>
 
       <section className="videoblock">
         <video autoPlay muted playsInline loop>
-          <source src="/tmod/video/rgb-mob.mp4" type="video/mp4" />
+          <source
+            media="(max-width: 759px)"
+            src="/tmod/video/rgb-mob.mp4"
+            type="video/mp4"
+          />
+          <source src="/tmod/video/rgb.mp4" type="video/mp4" />
         </video>
         <div className="videoblock-info">
           <h2 className="videoblock-title">
@@ -263,7 +296,12 @@ export default function TmodLanding() {
 
       <section className="videoblock">
         <video autoPlay muted playsInline loop>
-          <source src="/tmod/video/light-mob.mp4" type="video/mp4" />
+          <source
+            media="(max-width: 759px)"
+            src="/tmod/video/light-mob.mp4"
+            type="video/mp4"
+          />
+          <source src="/tmod/video/light.mp4" type="video/mp4" />
         </video>
         <div className="videoblock-info">
           <h2 className="videoblock-title">
@@ -323,7 +361,12 @@ export default function TmodLanding() {
 
       <section className="videoblock">
         <video autoPlay muted playsInline loop>
-          <source src="/tmod/video/climate-mob.mp4" type="video/mp4" />
+          <source
+            media="(max-width: 759px)"
+            src="/tmod/video/climate-mob.mp4"
+            type="video/mp4"
+          />
+          <source src="/tmod/video/climate.mp4" type="video/mp4" />
         </video>
         <div className="videoblock-info">
           <h2 className="videoblock-title">
@@ -381,7 +424,12 @@ export default function TmodLanding() {
 
       <section className="videoblock">
         <video autoPlay muted playsInline loop>
-          <source src="/tmod/video/smoke-mob.mp4" type="video/mp4" />
+          <source
+            media="(max-width: 759px)"
+            src="/tmod/video/smoke-mob.mp4"
+            type="video/mp4"
+          />
+          <source src="/tmod/video/smoke.mp4" type="video/mp4" />
         </video>
         <div className="videoblock-info">
           <h2 className="videoblock-title">
@@ -441,7 +489,13 @@ export default function TmodLanding() {
       <section className="control">
         <div className="container">
           <div className="phone-wrap">
-            <img src="/tmod/img/control/phone-mob.png" alt="smartphone" />
+            <picture>
+              <source
+                media="(max-width: 759px)"
+                srcSet="/tmod/img/control/phone-mob.png"
+              />
+              <img src="/tmod/img/control/phone.png" alt="smartphone" />
+            </picture>
           </div>
           <div className="control-info-wrap">
             <h2 className="control-title">Control any module from anywhere</h2>
@@ -457,25 +511,25 @@ export default function TmodLanding() {
                 <div className="control-icon-wrap">
                   <img src="/tmod/img/control/Icons-1.svg" alt="icon" />
                 </div>
-                <p className="control-text">Android or iOS systems</p>
+                <p className="control-item-text">Android or iOS systems</p>
               </li>
               <li className="control-item">
                 <div className="control-icon-wrap">
                   <img src="/tmod/img/control/Icons-2.svg" alt="icon" />
                 </div>
-                <p className="control-text">TV controls</p>
+                <p className="control-item-text">TV controls</p>
               </li>
               <li className="control-item">
                 <div className="control-icon-wrap">
                   <img src="/tmod/img/control/Icons-3.svg" alt="icon" />
                 </div>
-                <p className="control-text">Voice Assistant in the TV</p>
+                <p className="control-item-text">Voice Assistant in the TV</p>
               </li>
               <li className="control-item">
                 <div className="control-icon-wrap">
                   <img src="/tmod/img/control/Icons-4.svg" alt="icon" />
                 </div>
-                <p className="control-text">Smart Speakers</p>
+                <p className="control-item-text">Smart Speakers</p>
               </li>
             </ul>
 
@@ -496,63 +550,82 @@ export default function TmodLanding() {
 
       <section className="technology">
         <div className="container">
-          <h2 className="section-title">Main Benefits of TMOD Integrations</h2>
-          <div className="bentobox-2">
-            <div className="bentobox-panel panel-1">
-              <h3 className="bento-title">Full-Fledged & Cheap Integration</h3>
-              <p className="bento-text">
-                Can be integrated with any TV size. Requires only minor and
-                cost-effective design adjustments.
-              </p>
+          <h2 className="section-title">How TMOD Technology Works</h2>
+          <div className="bentobox-2 default">
+            <div className="bento2-item bento2-item-1">
+              <div className="bentobox-panel panel-1">
+                <h3 className="bento-title">
+                  Full-Fledged & Cheap Integration
+                </h3>
+                <p className="bento-text">
+                  Can be integrated with any TV size. Requires only minor and
+                  cost-effective design adjustments.
+                </p>
+              </div>
             </div>
-            <div className="bentobox-panel panel-2">
-              <h3 className="bento-title">Connectors</h3>
-              <p className="bento-text">
-                Each TV has from 1 to 4 designated places on the back cover that
-                are equipped with pin-connectors. <br />
-                Creating special places on the TV for exact modules ensures
-                aesthetics and reliable work for each module.
-              </p>
+            <div className="bento2-item bento2-item-2">
+              <div className="bentobox-panel panel-2">
+                <h3 className="bento-title">Connectors</h3>
+                <p className="bento-text">
+                  Each TV has from 1 to 4 designated places on the back cover
+                  that are equipped with pin-connectors. <br />
+                  Creating special places on the TV for exact modules ensures
+                  aesthetics and reliable work for each module.
+                </p>
+              </div>
             </div>
-            <div className="bentobox-panel panel-3">
-              <h3 className="bento-title">
-                Data
-                <br /> source
-              </h3>
-              <p className="bento-text">
-                Each module equipped with Wi-Fl and can be setup and interacted
-                with using smartphone and compatible smart home ecosystem.
-              </p>
+
+            <div className="bento2-item bento2-item-3">
+              <div className="bentobox-panel panel-3">
+                <h3 className="bento-title">
+                  Data
+                  <br /> source
+                </h3>
+                <p className="bento-text">
+                  Each module equipped with Wi-Fl and can be setup and
+                  interacted with using smartphone and compatible smart home
+                  ecosystem.
+                </p>
+              </div>
             </div>
-            <div className="bentobox-panel panel-4">
-              <h3 className="bento-title">Independent & Versatile</h3>
-              <p className="bento-text">
-                No hardware or software integration to TV mainboard required.
-                Compatible with any color or shape.
-              </p>
+
+            <div className="bento2-item bento2-item-4">
+              <div className="bentobox-panel panel-4">
+                <h3 className="bento-title">Independent & Versatile</h3>
+                <p className="bento-text">
+                  No hardware or software integration to TV mainboard required.
+                  Compatible with any color or shape.
+                </p>
+              </div>
             </div>
-            <div className="bentobox-panel panel-5">
-              <h3 className="bento-title">
-                Central
-                <br /> MCU
-              </h3>
-              <p className="bento-text">
-                Tiny and simple MCU connects all pin-connectors between each
-                other, providing required amount of power to each pf them and
-                ensuring customers' safety.
-              </p>
+
+            <div className="bento2-item bento2-item-5">
+              <div className="bentobox-panel panel-5">
+                <h3 className="bento-title">
+                  Central
+                  <br /> MCU
+                </h3>
+                <p className="bento-text">
+                  Tiny and simple MCU connects all pin-connectors between each
+                  other, providing required amount of power to each pf them and
+                  ensuring customers' safety.
+                </p>
+              </div>
             </div>
-            <div className="bentobox-panel panel-6">
-              <h3 className="bento-title">
-                Power
-                <br /> source
-              </h3>
-              <p className="bento-text">
-                Central MCU is connected directly to the powerboard of the TV.
-                Hence, modules can work 24/7 regardless of the TV status and
-                there's no need for software integration or changes in
-                mainboard.
-              </p>
+
+            <div className="bento2-item bento2-item-6">
+              <div className="bentobox-panel panel-6">
+                <h3 className="bento-title">
+                  Power
+                  <br /> source
+                </h3>
+                <p className="bento-text">
+                  Central MCU is connected directly to the powerboard of the TV.
+                  Hence, modules can work 24/7 regardless of the TV status and
+                  there's no need for software integration or changes in
+                  mainboard.
+                </p>
+              </div>
             </div>
           </div>
         </div>
