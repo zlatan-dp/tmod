@@ -327,9 +327,17 @@ section {
     .bento-text {
       width: 50%;
 
+      &.margin-bottom {
+        margin-bottom: 4px;
+      }
+
       @media (min-width: 760px) {
         font-size: clamp(12px, 1.3vw, 25px);
         width: 35%;
+
+        &.margin-bottom {
+          margin-bottom: 8px;
+        }
       }
     }
   }
@@ -419,9 +427,17 @@ section {
     letter-spacing: 0.01em;
     color: var(--white-color);
 
+    &.margin-bottom {
+      margin-bottom: 4px;
+    }
+
     @media (min-width: 760px) {
       /* font-size: clamp(12px, 1vw, 18px); */
       font-size: clamp(8px, 1vw, 18px);
+
+      &.margin-bottom {
+        margin-bottom: 8px;
+      }
     }
   }
 }
@@ -471,6 +487,7 @@ section {
       -webkit-text-fill-color: transparent;
 
       @media (min-width: 760px) {
+        width: 83%;
         font-size: clamp(24px, 3.75vw, 72px);
       }
     }
@@ -837,6 +854,10 @@ section {
         line-height: 150%;
         letter-spacing: 0.01em;
         color: var(--white-color);
+
+        .underline {
+          text-decoration: underline;
+        }
 
         @media (min-width: 760px) {
           font-size: clamp(12px, 1.3vw, 25px);

@@ -37,12 +37,7 @@ export default function PagesDispatcher() {
   useEffect(() => {
     switch (utmContent) {
       default:
-        if (window.innerWidth > 760) {
-          window.location.href =
-            "https://www.figma.com/proto/mLXyPVFWeoms9vfGsoKfld/TMOD---China-Exhibition?page-id=787%3A6127&node-id=743-1666&viewport=7136%2C1703%2C0.28&t=3mb2Jkln4YvumMcL-8&scaling=scale-down&content-scaling=fixed&starting-point-node-id=743%3A1666&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1";
-        } else {
-          router.push(`/tmod`);
-        }
+        router.push(`/tmod`);
     }
   }, [pageEnter]);
 

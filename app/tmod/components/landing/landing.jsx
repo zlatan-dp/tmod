@@ -320,12 +320,15 @@ export default function TmodLanding() {
         <div className="container">
           <div className="bentobox-panel main-panel">
             <h3 className="bento-title">Light Projection module</h3>
-            <p className="bento-text">
+            <p className="bento-text margin-bottom">
               With light effects covering a wide area, this module creates
               excellent atmospheric colors and pattern, providing a unique
-              visual experience. Module supplied with bracket that allows to
-              adjust image angle or choose where to aim it (wall behind the TV
-              or the ceiling of the room).
+              visual experience.
+            </p>
+            <p className="bento-text">
+              Module supplied with bracket that allows to adjust image angle or
+              choose where to aim it (wall behind the TV or the ceiling of the
+              room).
             </p>
           </div>
           <ul className="modules-info-list list">
@@ -385,10 +388,13 @@ export default function TmodLanding() {
         <div className="container">
           <div className="bentobox-panel main-panel">
             <h3 className="bento-title">Home Climate module</h3>
-            <p className="bento-text">
+            <p className="bento-text margin-bottom">
               Reliable assistant in creating a comfortable microclimate. The
-              device measures temperature and humidity. The obtained data help
-              you effectively adjust the climate in your room.
+              device measures temperature and humidity.
+            </p>
+            <p className="bento-text">
+              The obtained data help you effectively adjust the climate in your
+              room.
             </p>
           </div>
           <ul className="modules-info-list list">
@@ -501,10 +507,13 @@ export default function TmodLanding() {
             <h2 className="control-title">Control any module from anywhere</h2>
             <p className="control-text">
               TMOD Technology ensures each module stays connected around the
-              clock, even when the TV is switched off. Whether you’re managing
-              home safety, climate settings, or lighting, TMOD’s versatile
-              integrations deliver seamless, on-demand access to all your
-              devices.
+              clock,{" "}
+              <span className="underline">
+                even when the TV is switched off.
+              </span>{" "}
+              Whether you’re managing home safety, climate settings, or
+              lighting, TMOD’s versatile integrations deliver seamless,
+              on-demand access to all your devices.
             </p>
             <ul className="control-list list">
               <li className="control-item">
@@ -566,9 +575,11 @@ export default function TmodLanding() {
             <div className="bento2-item bento2-item-2">
               <div className="bentobox-panel panel-2">
                 <h3 className="bento-title">Connectors</h3>
-                <p className="bento-text">
+                <p className="bento-text margin-bottom">
                   Each TV has from 1 to 4 designated places on the back cover
-                  that are equipped with pin-connectors. <br />
+                  that are equipped with pin-connectors.
+                </p>
+                <p className="bento-text">
                   Creating special places on the TV for exact modules ensures
                   aesthetics and reliable work for each module.
                 </p>
