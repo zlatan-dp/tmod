@@ -449,11 +449,11 @@ section {
   z-index: 100;
   width: 100%;
   max-width: 1920px;
-  padding: max(10px, 0.5vw) 0;
+  padding: min(27px, 3.5vw) 0;
   background-color: var(--white-color);
 
   @media (min-width: 760px) {
-    padding: min(24px, 0.625vw) 0;
+    padding: min(27px, 1.7vw) 0;
   }
 
   .container {
@@ -467,7 +467,7 @@ section {
       width: 27vw;
 
       @media (min-width: 760px) {
-        width: min(12vw, 230px);
+        width: min(10vw, 210px);
       }
     }
 
@@ -483,8 +483,8 @@ section {
       color: #fff;
 
       @media (min-width: 760px) {
-        padding: min(1.5vw, 27px) min(3vw, 54px);
-        font-size: clamp(12px, 1.6vw, 32px);
+        padding: min(1.2vw, 22px) min(2.4vw, 44px);
+        font-size: clamp(12px, 1.5vw, 27px);
       }
     }
   }
