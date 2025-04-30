@@ -114,7 +114,7 @@ export default function TmodLanding() {
         </div>
       </div>
 
-      <header className="header">
+      <section className="header">
         <div className="container">
           <a className="logo-wrap" href="#">
             <img src="/tmod/img/tmod_logo.svg" alt="tmod logo" />
@@ -123,7 +123,7 @@ export default function TmodLanding() {
             Contact Us
           </a>
         </div>
-      </header>
+      </section>
 
       <section className="hero">
         <div className="container">
@@ -139,89 +139,94 @@ export default function TmodLanding() {
         </div>
       </section>
 
-      <section className="videoblock">
-        <video autoPlay muted playsInline loop>
-          <source
-            media="(max-width: 759px)"
-            src="/tmod/video/tmod-mob.mp4"
-            type="video/mp4"
-          />
-          <source src="/tmod/video/tmod.mp4" type="video/mp4" />
-        </video>
-        <div className="videoblock-info">
+      <div className="parallax">
+        <section className="videoblock">
+          <video autoPlay muted playsInline loop>
+            <source
+              media="(max-width: 759px)"
+              src="/tmod/video/tmod-mob.mp4"
+              type="video/mp4"
+            />
+            <source src="/tmod/video/tmod.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section className="videoblock-info">
           <h2 className="videoblock-title">TMOD Technology</h2>
           <p className="videoblock-text">
             is a central hub for new kinds of
             <br /> TV accessories, created for comfort,
             <br /> safety and information
           </p>
-        </div>
-      </section>
+        </section>
 
-      <section className="benefits">
-        <div className="container">
-          <h2 className="section-title">Main Benefits of TMOD Integrations</h2>
-          <div className="bentobox-1 default">
-            <div className="bento-item bento-item-1">
-              <div className="bentobox-panel panel-1">
-                <h3 className="bento-title">
-                  TV as a central hub for IoT and the Smart Home
-                </h3>
-                <p className="bento-text">
-                  Offer a cutting-edge TV with modules like lighting, climate
-                  control, and security.
-                </p>
+        <section className="benefits">
+          <div className="container">
+            <h2 className="section-title">
+              Main Benefits of TMOD Integrations
+            </h2>
+            <div className="bentobox-1 default">
+              <div className="bento-item bento-item-1">
+                <div className="bentobox-panel panel-1">
+                  <h3 className="bento-title">
+                    TV as a central hub for IoT and the Smart Home
+                  </h3>
+                  <p className="bento-text">
+                    Offer a cutting-edge TV with modules like lighting, climate
+                    control, and security.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="bento-item bento-item-2">
-              <div className="bentobox-panel panel-2">
-                <h3 className="bento-title">
-                  Upselling potential and revenue growth
-                </h3>
-                <p className="bento-text">
-                  Unlike usual TV accessories, modules can be provided to end
-                  customers after TV was sold. Either by adding more modules to
-                  initial sales or upgrading their versions over the years.
-                </p>
+              <div className="bento-item bento-item-2">
+                <div className="bentobox-panel panel-2">
+                  <h3 className="bento-title">
+                    Upselling potential and revenue growth
+                  </h3>
+                  <p className="bento-text">
+                    Unlike usual TV accessories, modules can be provided to end
+                    customers after TV was sold. Either by adding more modules
+                    to initial sales or upgrading their versions over the years.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="bento-item bento-item-3">
-              <div className="bentobox-panel panel-3">
-                <h3 className="bento-title">
-                  Unique product with extra functions and USPs
-                </h3>
-                <p className="bento-text">
-                  Differentiate your brand with actually unique selling point.
-                </p>
+              <div className="bento-item bento-item-3">
+                <div className="bentobox-panel panel-3">
+                  <h3 className="bento-title">
+                    Unique product with extra functions and USPs
+                  </h3>
+                  <p className="bento-text">
+                    Differentiate your brand with actually unique selling point.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="bento-item bento-item-4">
-              <div className="bentobox-panel panel-4">
-                <h3 className="bento-title">
-                  Boosting ASP and increasing sales
-                </h3>
-                <p className="bento-text">
-                  Modules - are separately sold devices, which provides higher
-                  average sales price for the TV kit and adds flexibility of
-                  proposition for various target audiences.
-                </p>
+              <div className="bento-item bento-item-4">
+                <div className="bentobox-panel panel-4">
+                  <h3 className="bento-title">
+                    Boosting ASP and increasing sales
+                  </h3>
+                  <p className="bento-text">
+                    Modules - are separately sold devices, which provides higher
+                    average sales price for the TV kit and adds flexibility of
+                    proposition for various target audiences.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="bento-item bento-item-5">
-              <div className="bentobox-panel panel-5">
-                <h3 className="bento-title">
-                  New marketing opportunities & engagement cause
-                </h3>
-                <p className="bento-text">
-                  Tap into a growing market of Smart Home and get an extra
-                  opportunity for marketing with new unique tech in your
-                  products.
-                </p>
+              <div className="bento-item bento-item-5">
+                <div className="bentobox-panel panel-5">
+                  <h3 className="bento-title">
+                    New marketing opportunities & engagement cause
+                  </h3>
+                  <p className="bento-text">
+                    Tap into a growing market of Smart Home and get an extra
+                    opportunity for marketing with new unique tech in your
+                    products.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section className="modules">
         <div className="container">
@@ -240,16 +245,19 @@ export default function TmodLanding() {
         </div>
       </section>
 
-      <section className="videoblock">
-        <video autoPlay muted playsInline loop>
-          <source
-            media="(max-width: 759px)"
-            src="/tmod/video/rgb-mob.mp4"
-            type="video/mp4"
-          />
-          <source src="/tmod/video/rgb.mp4" type="video/mp4" />
-        </video>
-        <div className="videoblock-info">
+      <div className="parallax">
+        <section className="videoblock">
+          <video autoPlay muted playsInline loop>
+            <source
+              media="(max-width: 759px)"
+              src="/tmod/video/rgb-mob.mp4"
+              type="video/mp4"
+            />
+            <source src="/tmod/video/rgb.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section className="videoblock-info">
           <h2 className="videoblock-title">
             RGB Light
             <br /> module
@@ -259,62 +267,65 @@ export default function TmodLanding() {
             <br /> with nice set of modes
             <br /> and ability to create custom ones
           </p>
-        </div>
-      </section>
+        </section>
 
-      <section className="modules-info rgb-module">
-        <div className="container">
-          <div className="bentobox-panel main-panel">
-            <h3 className="bento-title">RGB Light module</h3>
-            <p className="bento-text">
-              Perfect solution for additional lighting in your space. This
-              module creates striking, ambient colorful backlight that
-              enhanhance any interior.
-            </p>
+        <section className="modules-info rgb-module">
+          <div className="container">
+            <div className="bentobox-panel main-panel">
+              <h3 className="bento-title">RGB Light module</h3>
+              <p className="bento-text">
+                Perfect solution for additional lighting in your space. This
+                module creates striking, ambient colorful backlight that
+                enhanhance any interior.
+              </p>
+            </div>
+            <ul className="modules-info-list list">
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/rgb/Icons-1.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">
+                  Control via TV RCU and Voice Assistant
+                </p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/rgb/Icons-2.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">
+                  Custom, pleasant and useful modes
+                </p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/rgb/Icons-3.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Wide brightness range</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/rgb/Icons-4.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Wide color range</p>
+              </li>
+            </ul>
           </div>
-          <ul className="modules-info-list list">
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/rgb/Icons-1.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">
-                Control via TV RCU and Voice Assistant
-              </p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/rgb/Icons-2.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">
-                Custom, pleasant and useful modes
-              </p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/rgb/Icons-3.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Wide brightness range</p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/rgb/Icons-4.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Wide color range</p>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <section className="videoblock">
-        <video autoPlay muted playsInline loop>
-          <source
-            media="(max-width: 759px)"
-            src="/tmod/video/light-mob.mp4"
-            type="video/mp4"
-          />
-          <source src="/tmod/video/light.mp4" type="video/mp4" />
-        </video>
-        <div className="videoblock-info">
+      <div className="parallax">
+        <section className="videoblock">
+          <video autoPlay muted playsInline loop>
+            <source
+              media="(max-width: 759px)"
+              src="/tmod/video/light-mob.mp4"
+              type="video/mp4"
+            />
+            <source src="/tmod/video/light.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section className="videoblock-info">
           <h2 className="videoblock-title">
             Light Projection
             <br /> module
@@ -324,65 +335,68 @@ export default function TmodLanding() {
             <br />
             that changes overall room mood
           </p>
-        </div>
-      </section>
+        </section>
 
-      <section className="modules-info light-module">
-        <div className="container">
-          <div className="bentobox-panel main-panel">
-            <h3 className="bento-title">Light Projection module</h3>
-            <p className="bento-text margin-bottom">
-              With light effects covering a wide area, this module creates
-              excellent atmospheric colors and pattern, providing a unique
-              visual experience.
-            </p>
-            <p className="bento-text">
-              Module supplied with bracket that allows to adjust image angle or
-              choose where to aim it (wall behind the TV or the ceiling of the
-              room).
-            </p>
-          </div>
-          <ul className="modules-info-list list">
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/light/Icons-1.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Quiet work</p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/light/Icons-2.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Only LED light (no lasers)</p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/light/Icons-3.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">
-                Wide light angle and range of brightness
+        <section className="modules-info light-module">
+          <div className="container">
+            <div className="bentobox-panel main-panel">
+              <h3 className="bento-title">Light Projection module</h3>
+              <p className="bento-text margin-bottom">
+                With light effects covering a wide area, this module creates
+                excellent atmospheric colors and pattern, providing a unique
+                visual experience.
               </p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/light/Icons-4.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Nice "Aurora" light pattern</p>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <p className="bento-text">
+                Module supplied with bracket that allows to adjust image angle
+                or choose where to aim it (wall behind the TV or the ceiling of
+                the room).
+              </p>
+            </div>
+            <ul className="modules-info-list list">
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/light/Icons-1.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Quiet work</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/light/Icons-2.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Only LED light (no lasers)</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/light/Icons-3.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">
+                  Wide light angle and range of brightness
+                </p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/light/Icons-4.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Nice "Aurora" light pattern</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
-      <section className="videoblock">
-        <video autoPlay muted playsInline loop>
-          <source
-            media="(max-width: 759px)"
-            src="/tmod/video/climate-mob.mp4"
-            type="video/mp4"
-          />
-          <source src="/tmod/video/climate.mp4" type="video/mp4" />
-        </video>
-        <div className="videoblock-info">
+      <div className="parallax">
+        <section className="videoblock">
+          <video autoPlay muted playsInline loop>
+            <source
+              media="(max-width: 759px)"
+              src="/tmod/video/climate-mob.mp4"
+              type="video/mp4"
+            />
+            <source src="/tmod/video/climate.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section className="videoblock-info">
           <h2 className="videoblock-title">
             Home Climate
             <br /> module
@@ -392,63 +406,66 @@ export default function TmodLanding() {
             <br />
             that can serve as a thermostat
           </p>
-        </div>
-      </section>
+        </section>
 
-      <section className="modules-info climate-module">
-        <div className="container">
-          <div className="bentobox-panel main-panel">
-            <h3 className="bento-title">Home Climate module</h3>
-            <p className="bento-text margin-bottom">
-              Reliable assistant in creating a comfortable microclimate. The
-              device measures temperature and humidity.
-            </p>
-            <p className="bento-text">
-              The obtained data help you effectively adjust the climate in your
-              room.
-            </p>
-          </div>
-          <ul className="modules-info-list list">
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/climate/Icons-1.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Temperature</p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/climate/Icons-2.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Humidity</p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/climate/Icons-3.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Alarms via app notifications</p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/climate/Icons-4.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">
-                Home climate control via other appliances
+        <section className="modules-info climate-module">
+          <div className="container">
+            <div className="bentobox-panel main-panel">
+              <h3 className="bento-title">Home Climate module</h3>
+              <p className="bento-text margin-bottom">
+                Reliable assistant in creating a comfortable microclimate. The
+                device measures temperature and humidity.
               </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <p className="bento-text">
+                The obtained data help you effectively adjust the climate in
+                your room.
+              </p>
+            </div>
+            <ul className="modules-info-list list">
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/climate/Icons-1.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Temperature</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/climate/Icons-2.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Humidity</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/climate/Icons-3.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Alarms via app notifications</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/climate/Icons-4.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">
+                  Home climate control via other appliances
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
-      <section className="videoblock">
-        <video autoPlay muted playsInline loop>
-          <source
-            media="(max-width: 759px)"
-            src="/tmod/video/smoke-mob.mp4"
-            type="video/mp4"
-          />
-          <source src="/tmod/video/smoke.mp4" type="video/mp4" />
-        </video>
-        <div className="videoblock-info">
+      <div className="parallax">
+        <section className="videoblock">
+          <video autoPlay muted playsInline loop>
+            <source
+              media="(max-width: 759px)"
+              src="/tmod/video/smoke-mob.mp4"
+              type="video/mp4"
+            />
+            <source src="/tmod/video/smoke.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section className="videoblock-info">
           <h2 className="videoblock-title">
             Gas Sensing
             <br /> module
@@ -459,49 +476,49 @@ export default function TmodLanding() {
             with emergency audio &<br />
             mobile alerts
           </p>
-        </div>
-      </section>
+        </section>
 
-      <section className="modules-info gas-module">
-        <div className="container">
-          <div className="bentobox-panel main-panel">
-            <h3 className="bento-title">Gas Sensing module</h3>
-            <p className="bento-text">
-              The Gas Sensing module provides your home with extra safety.
-              <br />
-              The module detects smoke and elevated levels of carbon monoxide
-              (CO), providing emergency sound alarms and notifications via app
-              in case of a dangerous situation.
-            </p>
+        <section className="modules-info gas-module">
+          <div className="container">
+            <div className="bentobox-panel main-panel">
+              <h3 className="bento-title">Gas Sensing module</h3>
+              <p className="bento-text">
+                The Gas Sensing module provides your home with extra safety.
+                <br />
+                The module detects smoke and elevated levels of carbon monoxide
+                (CO), providing emergency sound alarms and notifications via app
+                in case of a dangerous situation.
+              </p>
+            </div>
+            <ul className="modules-info-list list">
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/gas/Icons-1.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Smoke sensor</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/gas/Icons-2.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Carbon monoxide (CO) sensor</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/gas/Icons-3.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Sound alarm</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/gas/Icons-4.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">App and SMS notifications</p>
+              </li>
+            </ul>
           </div>
-          <ul className="modules-info-list list">
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/gas/Icons-1.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Smoke sensor</p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/gas/Icons-2.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Carbon monoxide (CO) sensor</p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/gas/Icons-3.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">Sound alarm</p>
-            </li>
-            <li className="modules-info-item bentobox-panel">
-              <div className="info-icon-wrap">
-                <img src="/tmod/img/gas/Icons-4.svg" alt="icon" />
-              </div>
-              <p className="bento-sub-title">App and SMS notifications</p>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section className="control">
         <div className="container">
