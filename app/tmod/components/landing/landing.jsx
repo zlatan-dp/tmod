@@ -114,6 +114,17 @@ export default function TmodLanding() {
         </div>
       </div>
 
+      <header className="header">
+        <div className="container">
+          <a className="logo-wrap" href="#">
+            <img src="/tmod/img/tmod_logo.svg" alt="tmod logo" />
+          </a>
+          <a className="contacts-link link" href="#contact-us-section">
+            Contact Us
+          </a>
+        </div>
+      </header>
+
       <section className="hero">
         <div className="container">
           <div className="logo-wrap">
