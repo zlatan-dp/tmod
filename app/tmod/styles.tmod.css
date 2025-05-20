@@ -156,6 +156,7 @@ section {
 }
 
 .section-title {
+  margin-left: 4.4vw;
   font-weight: 400;
   font-size: clamp(24px, 6.4vw, 48px);
   line-height: 100%;
@@ -258,8 +259,13 @@ section {
 
 .videoblock {
   padding: 0;
+  aspect-ratio: 375/250;
+  display: flex;
+  justify-content: center;
+  position: relative;
 
   @media (min-width: 760px) {
+    aspect-ratio: auto;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -267,8 +273,21 @@ section {
     overflow: hidden; */
   }
 
-  video {
+  .videoblock-decor {
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    height: 8.8vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+
+    @media (min-width: 760px) {
+      display: none;
+    }
+  }
+
+  video {
+    /* width: 100%; */
+    height: 100%;
     display: block;
 
     @media (min-width: 760) {
@@ -279,7 +298,7 @@ section {
 }
 
 .videoblock-info {
-  background: #d9d9d9;
+  background: var(--black-color);
   display: flex;
   flex-direction: column;
   gap: min(8.8vw, 67px);
@@ -306,24 +325,23 @@ section {
     font-size: clamp(24px, 6.4vw, 48px);
     line-height: 100%;
     letter-spacing: 0.01em;
-    color: var(--black-color);
+    color: var(--white-color);
     text-align: center;
 
     @media (min-width: 760px) {
       font-size: clamp(24px, 3.75vw, 72px);
-      color: var(--white-color);
     }
   }
   .videoblock-text {
     font-weight: 400;
-    font-size: clamp(18px, 4.6vw, 36px);
+    font-size: clamp(16px, 4.5vw, 36px);
     line-height: 120%;
     letter-spacing: 0.01em;
     text-align: center;
+    color: var(--white-color);
 
     @media (min-width: 760px) {
       font-size: clamp(18px, 2.7vw, 52px);
-      color: var(--white-color);
     }
   }
 }
@@ -476,8 +494,8 @@ section {
   z-index: 100;
   width: 100%;
   max-width: 1920px;
-  padding: min(14px, 2vw) 0;
-  background-color: var(--white-color);
+  padding: min(14px, 3.4vw) 0;
+  background-color: var(--black-color);
 
   @media (min-width: 760px) {
     padding: min(18px, 1vw) 0;
@@ -520,7 +538,7 @@ section {
 /* HERO SECTION */
 
 .hero {
-  height: 160vw;
+  height: 170vw;
   max-height: 1216px;
   padding: 0;
 
@@ -551,6 +569,7 @@ section {
 
     .hero-text {
       width: 64%;
+      min-width: 210px;
       font-weight: 400;
       font-size: clamp(24px, 6.4vw, 48px);
       line-height: 120%;
@@ -592,9 +611,8 @@ section {
 
 .bentobox-1 {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1.36fr 1fr 1.36fr;
+  display: flex;
+  flex-direction: column;
   gap: min(27px, 3.5vw);
   /* height: min(172.3vw, 1310px); */
   margin-top: min(51px, 5.7vw);
@@ -612,6 +630,28 @@ section {
     height: min(54vw, 1040px);
   }
 
+  .bentobox-panel {
+    padding: 8.8vw;
+
+    .expand-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: min(2.8vw, 25px);
+      border: 0.3vw solid #0081fe;
+      border-radius: 100px;
+      padding: 2vw 3.5vw;
+      background: transparent;
+      font-weight: 600;
+      color: #0081fe;
+      font-size: 3.5vw;
+      cursor: pointer;
+
+      .expand-btn-arrow {
+        width: min(22px, 2.5vw);
+      }
+    }
+  }
+
   .bento-item {
     @media (min-width: 760px) {
       position: absolute;
@@ -619,8 +659,6 @@ section {
   }
 
   .bento-item-1 {
-    grid-area: 1 / 1 / 2 / 2;
-
     @media (min-width: 760px) {
       left: 0%;
       top: 0%;
@@ -631,8 +669,6 @@ section {
   }
 
   .bento-item-2 {
-    grid-area: 1 / 2 / 2 / 3;
-
     @media (min-width: 760px) {
       left: var(--x1);
       top: 0%;
@@ -643,8 +679,6 @@ section {
   }
 
   .bento-item-3 {
-    grid-area: 2 / 1 / 3 / 3;
-
     @media (min-width: 760px) {
       left: var(--x2);
       top: var(--y1);
@@ -655,8 +689,6 @@ section {
   }
 
   .bento-item-4 {
-    grid-area: 3 / 1 / 4 / 2;
-
     @media (min-width: 760px) {
       left: 0%;
       top: var(--y2);
@@ -667,8 +699,6 @@ section {
   }
 
   .bento-item-5 {
-    grid-area: 3 / 2 / 4 / 3;
-
     @media (min-width: 760px) {
       left: var(--x1);
       top: var(--y1);
@@ -701,6 +731,12 @@ section {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 100% 100%;
+    }
+
+    .bento-title,
+    .bento-text {
+      width: 60%;
+      margin-bottom: min(40px, 5.2vw);
     }
   }
   .panel-2 {

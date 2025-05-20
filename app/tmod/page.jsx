@@ -9,6 +9,7 @@ export default function tmodLanding() {
     <>
       <TmodLanding />
       <Script src="/tmod/js/submit.js" />
+      <Script src="/tmod/js/animation.js" />
     </>
   );
 }

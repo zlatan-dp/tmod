@@ -141,6 +141,7 @@ export default function TmodLanding() {
 
       <div className="parallax">
         <section className="videoblock">
+          <div className="videoblock-decor"></div>
           <video autoPlay muted playsInline loop>
             <source
               media="(max-width: 759px)"
@@ -175,6 +176,12 @@ export default function TmodLanding() {
                     Offer a cutting-edge TV with modules like lighting, climate
                     control, and security.
                   </p>
+                  <div className="expand-btn">
+                    <span>Expand</span>
+                    <div className="expand-btn-arrow">
+                      <img src="/tmod/img/benefits/arrow.svg" alt="arrow" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="bento-item bento-item-2">
@@ -247,6 +254,7 @@ export default function TmodLanding() {
 
       <div className="parallax">
         <section className="videoblock">
+          <div className="videoblock-decor"></div>
           <video autoPlay muted playsInline loop>
             <source
               media="(max-width: 759px)"
@@ -315,6 +323,7 @@ export default function TmodLanding() {
 
       <div className="parallax">
         <section className="videoblock">
+          <div className="videoblock-decor"></div>
           <video autoPlay muted playsInline loop>
             <source
               media="(max-width: 759px)"
@@ -386,6 +395,7 @@ export default function TmodLanding() {
 
       <div className="parallax">
         <section className="videoblock">
+          <div className="videoblock-decor"></div>
           <video autoPlay muted playsInline loop>
             <source
               media="(max-width: 759px)"
@@ -455,6 +465,7 @@ export default function TmodLanding() {
 
       <div className="parallax">
         <section className="videoblock">
+          <div className="videoblock-decor"></div>
           <video autoPlay muted playsInline loop>
             <source
               media="(max-width: 759px)"
