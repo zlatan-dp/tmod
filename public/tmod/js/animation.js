@@ -1,19 +1,29 @@
 //  Benefits TMOD intedrations
 
-const expandButtons = document.querySelectorAll(".expand-btn");
+const expandButtons = document.querySelectorAll(".benefits-expand-btn");
 
-function expandPanel(panel) {
-  const bentoText = panel.previousElementSibling;
-  const icon = panel.querySelector(".expand-btn-arrow");
-  console.log("bentoText", bentoText);
+function expandPanel(button) {
+  const targetId = button.dataset.target;
+  const bentoText = document.querySelector(
+    `.bento-text[data-id="${targetId}"]`
+  );
+  const icon = button.querySelector(".expand-btn-arrow");
+  const btnText = button.querySelector("span");
 
-  bentoText.classList.toggle("active");
-  icon.classList.toggle("rotated");
+  if (bentoText) {
+    bentoText.classList.toggle("active");
+  }
+
+  if (icon) {
+    icon.classList.toggle("rotated");
+  }
+
+  btnText.textContent = icon.classList.contains("rotated")
+    ? "Collaps"
+    : "Expand";
 }
 
 function handleExpandClick(event) {
-  console.log("kyky");
-
   expandPanel(event.currentTarget);
 }
 

@@ -172,11 +172,11 @@ export default function TmodLanding() {
                   <h3 className="bento-title">
                     TV as a central hub for IoT and the Smart Home
                   </h3>
-                  <p className="bento-text">
+                  <p className="bento-text" data-id="text1">
                     Offer a cutting-edge TV with modules like lighting, climate
                     control, and security.
                   </p>
-                  <div className="expand-btn">
+                  <div className="benefits-expand-btn" data-target="text1">
                     <span>Expand</span>
                     <div className="expand-btn-arrow">
                       <img src="/tmod/img/benefits/arrow.svg" alt="arrow" />
@@ -189,11 +189,17 @@ export default function TmodLanding() {
                   <h3 className="bento-title">
                     Upselling potential and revenue growth
                   </h3>
-                  <p className="bento-text">
+                  <p className="bento-text" data-id="text2">
                     Unlike usual TV accessories, modules can be provided to end
                     customers after TV was sold. Either by adding more modules
                     to initial sales or upgrading their versions over the years.
                   </p>
+                  <div className="benefits-expand-btn" data-target="text2">
+                    <span>Expand</span>
+                    <div className="expand-btn-arrow">
+                      <img src="/tmod/img/benefits/arrow.svg" alt="arrow" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="bento-item bento-item-3">
@@ -201,9 +207,15 @@ export default function TmodLanding() {
                   <h3 className="bento-title">
                     Unique product with extra functions and USPs
                   </h3>
-                  <p className="bento-text">
+                  <p className="bento-text" data-id="text3">
                     Differentiate your brand with actually unique selling point.
                   </p>
+                  <div className="benefits-expand-btn" data-target="text3">
+                    <span>Expand</span>
+                    <div className="expand-btn-arrow">
+                      <img src="/tmod/img/benefits/arrow.svg" alt="arrow" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="bento-item bento-item-4">
@@ -211,11 +223,17 @@ export default function TmodLanding() {
                   <h3 className="bento-title">
                     Boosting ASP and increasing sales
                   </h3>
-                  <p className="bento-text">
+                  <p className="bento-text" data-id="text4">
                     Modules - are separately sold devices, which provides higher
                     average sales price for the TV kit and adds flexibility of
                     proposition for various target audiences.
                   </p>
+                  <div className="benefits-expand-btn" data-target="text4">
+                    <span>Expand</span>
+                    <div className="expand-btn-arrow">
+                      <img src="/tmod/img/benefits/arrow.svg" alt="arrow" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="bento-item bento-item-5">
@@ -223,11 +241,17 @@ export default function TmodLanding() {
                   <h3 className="bento-title">
                     New marketing opportunities & engagement cause
                   </h3>
-                  <p className="bento-text">
+                  <p className="bento-text" data-id="text5">
                     Tap into a growing market of Smart Home and get an extra
                     opportunity for marketing with new unique tech in your
                     products.
                   </p>
+                  <div className="benefits-expand-btn" data-target="text5">
+                    <span>Expand</span>
+                    <div className="expand-btn-arrow">
+                      <img src="/tmod/img/benefits/arrow.svg" alt="arrow" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

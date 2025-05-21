@@ -633,13 +633,27 @@ section {
   .bentobox-panel {
     padding: 8.8vw;
 
-    .expand-btn {
+    .bento-text {
+      max-height: 0;
+      margin-bottom: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all var(--trans-dur) var(--trans-timing-function);
+
+      &.active {
+        max-height: 1000px;
+        margin-bottom: min(40px, 5.2vw);
+        opacity: 1;
+      }
+    }
+
+    .benefits-expand-btn {
       display: inline-flex;
       align-items: center;
       gap: min(2.8vw, 25px);
       border: 0.3vw solid #0081fe;
       border-radius: 100px;
-      padding: 2vw 3.5vw;
+      padding: 1vw 3.5vw;
       background: transparent;
       font-weight: 600;
       color: #0081fe;
@@ -648,6 +662,11 @@ section {
 
       .expand-btn-arrow {
         width: min(22px, 2.5vw);
+        transition: transform var(--trans-dur) var(--trans-timing-function);
+
+        &.rotated {
+          transform: rotate(180deg);
+        }
       }
     }
   }
@@ -718,7 +737,8 @@ section {
         #001325 100%
       );
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: 110% 050%;
 
     @media (min-width: 760px) {
       background: url("/tmod/img/benefits/bg01.png"),
@@ -736,11 +756,13 @@ section {
     .bento-title,
     .bento-text {
       width: 60%;
-      margin-bottom: min(40px, 5.2vw);
     }
   }
   .panel-2 {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     background: url("/tmod/img/benefits/bg02-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
@@ -750,6 +772,12 @@ section {
       );
     background-repeat: no-repeat;
     background-size: cover;
+
+    .bento-title,
+    .bento-text {
+      width: 60%;
+      text-align: right;
+    }
 
     @media (min-width: 760px) {
       background: url("/tmod/img/benefits/bg02.png"),
@@ -774,11 +802,12 @@ section {
         #001325 100%
       );
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: 100% 100%;
 
     .bento-title,
     .bento-text {
-      width: 50%;
+      width: 60%;
 
       @media (min-width: 760px) {
         width: 100%;
@@ -799,8 +828,11 @@ section {
     }
   }
   .panel-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     height: 100%;
-    background: url("/tmod/img/benefits/bg02-mob.png"),
+    background: url("/tmod/img/benefits/bg04-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -809,6 +841,13 @@ section {
       );
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: 90%;
+
+    .bento-title,
+    .bento-text {
+      width: 60%;
+      text-align: right;
+    }
 
     @media (min-width: 760px) {
       background: url("/tmod/img/benefits/bg02.png"),
@@ -833,7 +872,13 @@ section {
         #001325 100%
       );
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: 100% 100%;
+
+    .bento-title,
+    .bento-text {
+      width: 60%;
+    }
 
     @media (min-width: 760px) {
       background: url("/tmod/img/benefits/bg05.png"),
