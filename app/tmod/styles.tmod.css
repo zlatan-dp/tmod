@@ -909,6 +909,41 @@ section {
       max-width: 480px;
     }
   }
+
+  .modules-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5vw;
+    margin-top: 10vw;
+    padding: 0 2.2vw;
+
+    .module-items-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3.5vw;
+
+      .module-item {
+        width: 38.9vw;
+      }
+    }
+
+    .module-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      .modules-text {
+        font-weight: 700;
+        font-size: clamp(10px, 2.6vw, 20px);
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        text-align: center;
+      }
+    }
+  }
 }
 
 /* RGB SECTION */

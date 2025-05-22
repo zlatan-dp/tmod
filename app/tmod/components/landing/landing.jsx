@@ -265,13 +265,68 @@ export default function TmodLanding() {
             <img src="/tmod/img/modules/modules-logo-mob.png" alt="logo" />
           </div>
           <div className="modules-wrap">
-            <picture>
-              <source
-                media="(max-width: 759px)"
-                srcSet="/tmod/img/modules/modules-frame-mob.png"
-              />
-              <img src="/tmod/img/modules/modules-frame.png" alt="modules" />
-            </picture>
+            <div className="module-item">
+              <div className="img-wrap">
+                <picture>
+                  <source
+                    media="(max-width: 759px)"
+                    srcSet="/tmod/img/modules/modules-light-mob.png"
+                  />
+                  <img
+                    src="/tmod/img/modules/modules-light-mob.png"
+                    alt="modules"
+                  />
+                </picture>
+              </div>
+              <p className="modules-text">RGB Light</p>
+            </div>
+            <div className="module-items-wrap">
+              <div className="module-item">
+                <div className="img-wrap">
+                  <picture>
+                    <source
+                      media="(max-width: 759px)"
+                      srcSet="/tmod/img/modules/modules-climate-mob.png"
+                    />
+                    <img
+                      src="/tmod/img/modules/modules-climate-mob.png"
+                      alt="modules"
+                    />
+                  </picture>
+                </div>
+                <p className="modules-text">Home Climate</p>
+              </div>
+              <div className="module-item">
+                <div className="img-wrap">
+                  <picture>
+                    <source
+                      media="(max-width: 759px)"
+                      srcSet="/tmod/img/modules/modules-gas-mob.png"
+                    />
+                    <img
+                      src="/tmod/img/modules/modules-gas-mob.png"
+                      alt="modules"
+                    />
+                  </picture>
+                </div>
+                <p className="modules-text">Gas Sensing</p>
+              </div>
+              <div className="module-item">
+                <div className="img-wrap">
+                  <picture>
+                    <source
+                      media="(max-width: 759px)"
+                      srcSet="/tmod/img/modules/modules-projection-mob.png"
+                    />
+                    <img
+                      src="/tmod/img/modules/modules-projection-mob.png"
+                      alt="modules"
+                    />
+                  </picture>
+                </div>
+                <p className="modules-text">Light Projection</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
