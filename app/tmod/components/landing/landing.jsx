@@ -573,8 +573,6 @@ export default function TmodLanding() {
             <div className="bentobox-panel main-panel">
               <h3 className="bento-title">Gas Sensing module</h3>
               <p className="bento-text">
-                The Gas Sensing module provides your home with extra safety.
-                <br />
                 The module detects smoke and elevated levels of carbon monoxide
                 (CO), providing emergency sound alarms and notifications via app
                 in case of a dangerous situation.
@@ -623,43 +621,6 @@ export default function TmodLanding() {
           </div>
           <div className="control-info-wrap">
             <h2 className="control-title">Control any module from anywhere</h2>
-            <p className="control-text">
-              TMOD Technology ensures each module stays connected around the
-              clock,{" "}
-              <span className="underline">
-                even when the TV is switched off.
-              </span>{" "}
-              Whether you’re managing home safety, climate settings, or
-              lighting, TMOD’s versatile integrations deliver seamless,
-              on-demand access to all your devices.
-            </p>
-            <ul className="control-list list">
-              <li className="control-item">
-                <div className="control-icon-wrap">
-                  <img src="/tmod/img/control/Icons-1.svg" alt="icon" />
-                </div>
-                <p className="control-item-text">Android or iOS systems</p>
-              </li>
-              <li className="control-item">
-                <div className="control-icon-wrap">
-                  <img src="/tmod/img/control/Icons-2.svg" alt="icon" />
-                </div>
-                <p className="control-item-text">TV controls</p>
-              </li>
-              <li className="control-item">
-                <div className="control-icon-wrap">
-                  <img src="/tmod/img/control/Icons-3.svg" alt="icon" />
-                </div>
-                <p className="control-item-text">Voice Assistant in the TV</p>
-              </li>
-              <li className="control-item">
-                <div className="control-icon-wrap">
-                  <img src="/tmod/img/control/Icons-4.svg" alt="icon" />
-                </div>
-                <p className="control-item-text">Smart Speakers</p>
-              </li>
-            </ul>
-
             <ul className="control-logos-list list">
               <li className="control-logos-item">
                 <img src="/tmod/img/control/logo-1.svg" alt="logo" />
@@ -669,6 +630,41 @@ export default function TmodLanding() {
               </li>
               <li className="control-logos-item">
                 <img src="/tmod/img/control/logo-3.svg" alt="logo" />
+              </li>
+            </ul>
+            <p className="control-text">
+              TMOD Technology ensures each module stays connected around the
+              clock, even when the TV is switched off. Whether you’re managing
+              home safety, climate settings, or lighting, TMOD’s versatile
+              integrations deliver seamless, on-demand access to all your
+              devices.
+            </p>
+          </div>
+          <div className="modules-info">
+            <ul className="modules-info-list list">
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/control/Icons-1.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Android or iOS systems</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/control/Icons-2.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">TV controls</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/control/Icons-3.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Voice Assistant in the TV</p>
+              </li>
+              <li className="modules-info-item bentobox-panel">
+                <div className="info-icon-wrap">
+                  <img src="/tmod/img/control/Icons-4.svg" alt="icon" />
+                </div>
+                <p className="bento-sub-title">Smart Speakers</p>
               </li>
             </ul>
           </div>
@@ -706,10 +702,7 @@ export default function TmodLanding() {
 
             <div className="bento2-item bento2-item-3">
               <div className="bentobox-panel panel-3">
-                <h3 className="bento-title">
-                  Data
-                  <br /> source
-                </h3>
+                <h3 className="bento-title">Data source</h3>
                 <p className="bento-text">
                   Each module equipped with Wi-Fl and can be setup and
                   interacted with using smartphone and compatible smart home
@@ -720,7 +713,10 @@ export default function TmodLanding() {
 
             <div className="bento2-item bento2-item-4">
               <div className="bentobox-panel panel-4">
-                <h3 className="bento-title">Independent & Versatile</h3>
+                <h3 className="bento-title">
+                  Independent
+                  <br /> & Versatile
+                </h3>
                 <p className="bento-text">
                   No hardware or software integration to TV mainboard required.
                   Compatible with any color or shape.
@@ -730,10 +726,7 @@ export default function TmodLanding() {
 
             <div className="bento2-item bento2-item-5">
               <div className="bentobox-panel panel-5">
-                <h3 className="bento-title">
-                  Central
-                  <br /> MCU
-                </h3>
+                <h3 className="bento-title">Central MCU</h3>
                 <p className="bento-text">
                   Tiny and simple MCU connects all pin-connectors between each
                   other, providing required amount of power to each pf them and
@@ -744,10 +737,7 @@ export default function TmodLanding() {
 
             <div className="bento2-item bento2-item-6">
               <div className="bentobox-panel panel-6">
-                <h3 className="bento-title">
-                  Power
-                  <br /> source
-                </h3>
+                <h3 className="bento-title">Power source</h3>
                 <p className="bento-text">
                   Central MCU is connected directly to the powerboard of the TV.
                   Hence, modules can work 24/7 regardless of the TV status and
@@ -765,7 +755,14 @@ export default function TmodLanding() {
           <h2 className="section-title">Partner FAQs</h2>
           <ul className="faq-list list">
             <li className="bentobox-panel">
-              <h3 className="bento-title">What is a Module TV?</h3>
+              <div className="faq-question-wrap">
+                <h3 className="bento-title faq-question">
+                  What is a Module TV?
+                </h3>
+                <div className="question-icon">
+                  <img src="/tmod/img/faq-arrow.svg" alt="show answer" />
+                </div>
+              </div>
               <p className="bento-text">
                 A Module TV is a unique customizable smart TV with
                 interchangeable modules, allowing users to upgrade features like
@@ -773,9 +770,14 @@ export default function TmodLanding() {
               </p>
             </li>
             <li className="bentobox-panel">
-              <h3 className="bento-title">
-                How does the Module TV integrate with smart home systems?
-              </h3>
+              <div className="faq-question-wrap">
+                <h3 className="bento-title faq-question">
+                  How does the Module TV integrate with smart home systems?
+                </h3>
+                <div className="question-icon">
+                  <img src="/tmod/img/faq-arrow.svg" alt="show answer" />
+                </div>
+              </div>
               <p className="bento-text">
                 The Module TV connects with other smart home devices, allowing
                 users to control their home ecosystem via their smartphone or
@@ -783,9 +785,14 @@ export default function TmodLanding() {
               </p>
             </li>
             <li className="bentobox-panel">
-              <h3 className="bento-title">
-                Can we get exclusive distribution rights for certain regions?
-              </h3>
+              <div className="faq-question-wrap">
+                <h3 className="bento-title faq-question">
+                  Can we get exclusive distribution rights for certain regions?
+                </h3>
+                <div className="question-icon">
+                  <img src="/tmod/img/faq-arrow.svg" alt="show answer" />
+                </div>
+              </div>
               <p className="bento-text">
                 Exclusive distribution agreements are available for qualified
                 partners. Please contact us to discuss regional availability and
@@ -793,9 +800,14 @@ export default function TmodLanding() {
               </p>
             </li>
             <li className="bentobox-panel">
-              <h3 className="bento-title">
-                What are the minimum order quantities (MOQ) for OEM orders?
-              </h3>
+              <div className="faq-question-wrap">
+                <h3 className="bento-title faq-question">
+                  What are the minimum order quantities (MOQ) for OEM orders?
+                </h3>
+                <div className="question-icon">
+                  <img src="/tmod/img/faq-arrow.svg" alt="show answer" />
+                </div>
+              </div>
               <p className="bento-text">
                 The MOQ depends on the level of customization required. Please
                 contact us for specific quantity requirements and pricing.
@@ -906,17 +918,17 @@ export default function TmodLanding() {
                   <p className="manager-position">B2B Sales Director</p>
                   <div className="manager-socials-wrap">
                     <a
+                      href="mailto:a.nikitin@kivismart.com"
+                      className="manager-contact mail"
+                    >
+                      a.nikitin@kivismart.com
+                    </a>
+                    <a
                       href="https://wa.me/48781464422?text=Hello%20Anton!%20I’d%20like%20to%20discuss%20a%20B2B%20inquiry%20about%20KidsTV.%20Could%20you%20please%20provide%20more%20information%20on%20partnership%20options%20and%20how%20we%20can%20move%20forward?%20Thank%20you!"
                       target="_blank"
                       className="manager-contact whatsup"
                     >
                       WhatsApp
-                    </a>
-                    <a
-                      href="mailto:a.nikitin@kivismart.com"
-                      className="manager-contact mail"
-                    >
-                      a.nikitin@kivismart.com
                     </a>
                   </div>
                 </div>

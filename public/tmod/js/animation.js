@@ -30,3 +30,28 @@ function handleExpandClick(event) {
 expandButtons.forEach((btn) => {
   btn.addEventListener("click", handleExpandClick);
 });
+
+// Partner Faq
+
+const questionWraps = document.querySelectorAll(".faq-question-wrap");
+
+function showAnswer(wrap) {
+  const answer = wrap.nextElementSibling;
+  const icon = wrap.querySelector(".question-icon");
+
+  if (answer) {
+    answer.classList.toggle("active");
+  }
+
+  if (icon) {
+    icon.classList.toggle("rotated");
+  }
+}
+
+function handleFaqClick(event) {
+  showAnswer(event.currentTarget);
+}
+
+questionWraps.forEach((wrap) => {
+  wrap.addEventListener("click", handleFaqClick);
+});
