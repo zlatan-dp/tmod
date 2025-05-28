@@ -7,11 +7,18 @@ function expandPanel(button) {
   const bentoText = document.querySelector(
     `.bento-text[data-id="${targetId}"]`
   );
+  const bentoTitle = document.querySelector(
+    `.bento-title[data-id="${targetId}"]`
+  );
   const icon = button.querySelector(".expand-btn-arrow");
   const btnText = button.querySelector("span");
 
   if (bentoText) {
     bentoText.classList.toggle("active");
+  }
+
+  if (bentoTitle) {
+    bentoTitle.classList.toggle("active");
   }
 
   if (icon) {

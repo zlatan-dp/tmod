@@ -169,7 +169,7 @@ export default function TmodLanding() {
             <div className="bentobox-1 default">
               <div className="bento-item bento-item-1">
                 <div className="bentobox-panel panel-1">
-                  <h3 className="bento-title">
+                  <h3 className="bento-title" data-id="text1">
                     TV as a central hub for IoT and the Smart Home
                   </h3>
                   <p className="bento-text" data-id="text1">
@@ -186,7 +186,7 @@ export default function TmodLanding() {
               </div>
               <div className="bento-item bento-item-2">
                 <div className="bentobox-panel panel-2">
-                  <h3 className="bento-title">
+                  <h3 className="bento-title" data-id="text2">
                     Upselling potential and revenue growth
                   </h3>
                   <p className="bento-text" data-id="text2">
@@ -204,7 +204,7 @@ export default function TmodLanding() {
               </div>
               <div className="bento-item bento-item-3">
                 <div className="bentobox-panel panel-3">
-                  <h3 className="bento-title">
+                  <h3 className="bento-title" data-id="text3">
                     Unique product with extra functions and USPs
                   </h3>
                   <p className="bento-text" data-id="text3">
@@ -220,7 +220,7 @@ export default function TmodLanding() {
               </div>
               <div className="bento-item bento-item-4">
                 <div className="bentobox-panel panel-4">
-                  <h3 className="bento-title">
+                  <h3 className="bento-title" data-id="text4">
                     Boosting ASP and increasing sales
                   </h3>
                   <p className="bento-text" data-id="text4">
@@ -238,7 +238,7 @@ export default function TmodLanding() {
               </div>
               <div className="bento-item bento-item-5">
                 <div className="bentobox-panel panel-5">
-                  <h3 className="bento-title">
+                  <h3 className="bento-title" data-id="text5">
                     New marketing opportunities & engagement cause
                   </h3>
                   <p className="bento-text" data-id="text5">
