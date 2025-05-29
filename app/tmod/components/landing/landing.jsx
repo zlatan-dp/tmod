@@ -296,7 +296,7 @@ export default function TmodLanding() {
                 </div>
                 <p className="modules-text">Home Climate</p>
               </div>
-              <div className="module-item">
+              <div className="module-item gas-item">
                 <div className="img-wrap">
                   <picture>
                     <source
@@ -689,14 +689,16 @@ export default function TmodLanding() {
             <div className="bento2-item bento2-item-2">
               <div className="bentobox-panel panel-2">
                 <h3 className="bento-title">Connectors</h3>
-                <p className="bento-text margin-bottom">
-                  Each TV has from 1 to 4 designated places on the back cover
-                  that are equipped with pin-connectors.
-                </p>
-                <p className="bento-text">
-                  Creating special places on the TV for exact modules ensures
-                  aesthetics and reliable work for each module.
-                </p>
+                <div className="bento-text">
+                  <p className="margin-bottom">
+                    Each TV has from 1 to 4 designated places on the back cover
+                    that are equipped with pin-connectors.
+                  </p>
+                  <p>
+                    Creating special places on the TV for exact modules ensures
+                    aesthetics and reliable work for each module.
+                  </p>
+                </div>
               </div>
             </div>
 
