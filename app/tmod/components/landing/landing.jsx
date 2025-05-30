@@ -634,10 +634,13 @@ export default function TmodLanding() {
             </ul>
             <p className="control-text">
               TMOD Technology ensures each module stays connected around the
-              clock, even when the TV is switched off. Whether you’re managing
-              home safety, climate settings, or lighting, TMOD’s versatile
-              integrations deliver seamless, on-demand access to all your
-              devices.
+              clock,{" "}
+              <span className="underline">
+                even when the TV is switched off.
+              </span>{" "}
+              Whether you’re managing home safety, climate settings, or
+              lighting, TMOD’s versatile integrations deliver seamless,
+              on-demand access to all your devices.
             </p>
           </div>
           <div className="modules-info">
