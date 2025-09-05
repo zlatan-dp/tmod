@@ -140,7 +140,7 @@ export default function TmodLanding() {
       </section>
 
       <div className="parallax">
-        <section className="videoblock">
+        {/* <section className="videoblock">
           <div className="videoblock-decor"></div>
           <video autoPlay muted playsInline loop>
             <source
@@ -150,6 +150,30 @@ export default function TmodLanding() {
             />
             <source src="/tmod/video/tmod.mp4" type="video/mp4" />
           </video>
+        </section> */}
+
+        <section className="photoblock">
+          <div className="videoblock-decor"></div>
+          <div className="two-photo-wrap">
+            <div className="img-wrap img-tmod">
+              <picture>
+                <source
+                  media="(max-width: 759px)"
+                  srcSet="/tmod/img/tmod/tmod_01_mob.png"
+                />
+                <img src="/tmod/img/tmod/tmod_01.png" alt="modules" />
+              </picture>
+            </div>
+            <div className="img-wrap rgb-light">
+              <picture>
+                <source
+                  media="(max-width: 759px)"
+                  srcSet="/tmod/img/tmod/tmod_02_mob.png"
+                />
+                <img src="/tmod/img/tmod/tmod_02.png" alt="modules" />
+              </picture>
+            </div>
+          </div>
         </section>
 
         <section className="videoblock-info">
@@ -316,10 +340,10 @@ export default function TmodLanding() {
                   <picture>
                     <source
                       media="(max-width: 759px)"
-                      srcSet="/tmod/img/modules/modules-projection-mob.png"
+                      srcSet="/tmod/img/modules/modules-projection-mob-2.png"
                     />
                     <img
-                      src="/tmod/img/modules/modules-projection-mob.png"
+                      src="/tmod/img/modules/modules-projection-mob-2.png"
                       alt="modules"
                     />
                   </picture>
@@ -337,10 +361,10 @@ export default function TmodLanding() {
           <video autoPlay muted playsInline loop>
             <source
               media="(max-width: 759px)"
-              src="/tmod/video/rgb-mob.mp4"
+              src="/tmod/video/rgb-2.mp4"
               type="video/mp4"
             />
-            <source src="/tmod/video/rgb.mp4" type="video/mp4" />
+            <source src="/tmod/video/rgb-2.mp4" type="video/mp4" />
           </video>
         </section>
 
@@ -406,10 +430,10 @@ export default function TmodLanding() {
           <video autoPlay muted playsInline loop>
             <source
               media="(max-width: 759px)"
-              src="/tmod/video/light-mob.mp4"
+              src="/tmod/video/light-2.mp4"
               type="video/mp4"
             />
-            <source src="/tmod/video/light.mp4" type="video/mp4" />
+            <source src="/tmod/video/light-2.mp4" type="video/mp4" />
           </video>
         </section>
 
@@ -473,7 +497,7 @@ export default function TmodLanding() {
       </div>
 
       <div className="parallax">
-        <section className="videoblock">
+        {/* <section className="videoblock">
           <div className="videoblock-decor"></div>
           <video autoPlay muted playsInline loop>
             <source
@@ -483,6 +507,19 @@ export default function TmodLanding() {
             />
             <source src="/tmod/video/climate.mp4" type="video/mp4" />
           </video>
+        </section> */}
+
+        <section className="photoblock">
+          <div className="videoblock-decor"></div>
+          <div className="one-photo-wrap">
+            <picture>
+              <source
+                media="(max-width: 759px)"
+                srcSet="/tmod/img/climate/climate-photo-mob.jpg"
+              />
+              <img src="/tmod/img/climate/climate-photo.jpg" alt="modules" />
+            </picture>
+          </div>
         </section>
 
         <section className="videoblock-info">
@@ -543,7 +580,7 @@ export default function TmodLanding() {
       </div>
 
       <div className="parallax">
-        <section className="videoblock">
+        {/* <section className="videoblock">
           <div className="videoblock-decor"></div>
           <video autoPlay muted playsInline loop>
             <source
@@ -553,6 +590,19 @@ export default function TmodLanding() {
             />
             <source src="/tmod/video/smoke.mp4" type="video/mp4" />
           </video>
+        </section> */}
+
+        <section className="photoblock">
+          <div className="videoblock-decor"></div>
+          <div className="one-photo-wrap">
+            <picture>
+              <source
+                media="(max-width: 759px)"
+                srcSet="/tmod/img/gas/gas-photo-mob.jpg"
+              />
+              <img src="/tmod/img/gas/gas-photo.jpg" alt="modules" />
+            </picture>
+          </div>
         </section>
 
         <section className="videoblock-info">
@@ -694,8 +744,8 @@ export default function TmodLanding() {
                 <h3 className="bento-title">Connectors</h3>
                 <div className="bento-text">
                   <p className="margin-bottom">
-                    Each TV has from 1 to 4 designated places on the back cover
-                    that are equipped with pin-connectors.
+                    Each TV has from 1 to 3 designated places on the back cover
+                    that are equipped with USB-C connectors.
                   </p>
                   <p>
                     Creating special places on the TV for exact modules ensures

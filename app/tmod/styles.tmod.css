@@ -335,6 +335,88 @@ section {
   }
 }
 
+.photoblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+
+  @media (min-width: 760px) {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    will-change: transform;
+  }
+
+  .videoblock-decor {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8.8vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+
+    @media (min-width: 760px) {
+      display: none;
+    }
+  }
+
+  .two-photo-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(20px, 13.3vw, 50px);
+    padding: clamp(12px, 8vw, 30px) clamp(20px, 13.3vw, 50px);
+    background: transparent;
+
+    @media (min-width: 760px) {
+      flex-direction: row;
+      background: linear-gradient(180deg, #002345 0%, #000 67%, #001325 100%);
+      width: 100%;
+      height: 100vh;
+      padding: 0 min(8.3vw, 180px);
+    }
+
+    .img-wrap {
+      &.img-tmod {
+        width: 90%;
+
+        @media (min-width: 760px) {
+          width: min(32vw, 734px);
+        }
+      }
+
+      &.rgb-light {
+        @media (min-width: 760px) {
+          width: min(50vw, 1120px);
+        }
+      }
+    }
+  }
+
+  .one-photo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 760px) {
+      width: 100%;
+      height: 100vh;
+    }
+
+    img {
+      @media (min-width: 760px) {
+        width: auto;
+        height: 100vh;
+      }
+    }
+  }
+}
+
 .videoblock-info {
   background: var(--black-color);
   display: flex;
@@ -1058,7 +1140,7 @@ section {
     }
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/benefits/bg02.png"),
+      background: url("/tmod/img/benefits/bg04.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1217,7 +1299,7 @@ section {
   }
   .main-panel {
     padding: min(8.8vw, 48px);
-    background-image: url("/tmod/img/light/light-mob.jpg");
+    background-image: url("/tmod/img/light/light-mob-2.jpg");
     height: 72.7vw;
     background-position-x: right;
     /* max-height: 553px; */
@@ -1233,7 +1315,7 @@ section {
 
     @media (min-width: 760px) {
       padding: min(33px, 1.7vw);
-      background-image: url("/tmod/img/light/light.jpg");
+      background-image: url("/tmod/img/light/light-2.jpg");
       height: 35vw;
       max-height: 680px;
     }
@@ -1251,7 +1333,8 @@ section {
   }
   .main-panel {
     padding: min(8.8vw, 48px);
-    background-image: url("/tmod/img/climate/climate-mob.jpg");
+    background-image: url("/tmod/img/climate/climate-mob-2.jpg");
+    background-position-x: right;
 
     .bento-title,
     .bento-text {
@@ -1264,7 +1347,7 @@ section {
 
     @media (min-width: 760px) {
       padding: min(33px, 1.7vw);
-      background-image: url("/tmod/img/climate/climate.jpg");
+      background-image: url("/tmod/img/climate/climate-2.jpg");
     }
   }
 }
@@ -1281,7 +1364,7 @@ section {
 
   .main-panel {
     padding: min(8.8vw, 48px);
-    background-image: url("/tmod/img/gas/gas-mob.jpg");
+    background-image: url("/tmod/img/gas/gas-mob-2.jpg");
 
     .bento-title,
     .bento-text {
@@ -1294,7 +1377,7 @@ section {
 
     @media (min-width: 760px) {
       padding: min(33px, 1.7vw);
-      background-image: url("/tmod/img/gas/gas.jpg");
+      background-image: url("/tmod/img/gas/gas-2.jpg");
     }
   }
 }
@@ -1608,7 +1691,7 @@ section {
   .panel-1 {
     height: 100%;
 
-    background: url("/tmod/img/technology/bg01-mob.png"),
+    background: url("/tmod/img/technology/bg01-mob-2.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1616,11 +1699,11 @@ section {
         #001325 100%
       );
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position-x: right;
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/technology/bg01.png"),
+      background: url("/tmod/img/technology/bg01-2.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1646,7 +1729,7 @@ section {
   .panel-2 {
     height: 100%;
 
-    background: url("/tmod/img/technology/bg02-mob.png"),
+    background: url("/tmod/img/technology/bg02-mob-2.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1658,7 +1741,7 @@ section {
     background-position: 100% 150%;
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/technology/bg02.png"),
+      background: url("/tmod/img/technology/bg02-2.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
