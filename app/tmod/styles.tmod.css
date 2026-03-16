@@ -217,7 +217,8 @@ section {
   height: 100vh;
   background-color: #0003265e;
 
-  transition: opacity var(--trans-dur) var(--trans-timing-function),
+  transition:
+    opacity var(--trans-dur) var(--trans-timing-function),
     visibility var(--trans-dur) var(--trans-timing-function);
 }
 
@@ -994,7 +995,8 @@ section {
 
   .panel-1 {
     height: 100%;
-    background: url("/tmod/img/benefits/bg01-mob.png"),
+    background:
+      url("/tmod/img/benefits/bg01-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1006,7 +1008,8 @@ section {
     background-position: 110% 050%;
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/benefits/bg01.png"),
+      background:
+        url("/tmod/img/benefits/bg01.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1034,7 +1037,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background: url("/tmod/img/benefits/bg02-mob.png"),
+    background:
+      url("/tmod/img/benefits/bg02-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1059,7 +1063,8 @@ section {
     }
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/benefits/bg02.png"),
+      background:
+        url("/tmod/img/benefits/bg02.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1074,7 +1079,8 @@ section {
   }
   .panel-3 {
     height: 100%;
-    background: url("/tmod/img/benefits/bg03-mob.png"),
+    background:
+      url("/tmod/img/benefits/bg03-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1097,7 +1103,8 @@ section {
     }
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/benefits/bg03.png"),
+      background:
+        url("/tmod/img/benefits/bg03.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1114,7 +1121,8 @@ section {
     flex-direction: column;
     align-items: flex-end;
     height: 100%;
-    background: url("/tmod/img/benefits/bg04-mob.png"),
+    background:
+      url("/tmod/img/benefits/bg04-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1140,7 +1148,8 @@ section {
     }
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/benefits/bg04.png"),
+      background:
+        url("/tmod/img/benefits/bg04.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1156,7 +1165,8 @@ section {
 
   .panel-5 {
     height: 100%;
-    background: url("/tmod/img/benefits/bg05-mob.png"),
+    background:
+      url("/tmod/img/benefits/bg05-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1179,7 +1189,8 @@ section {
     }
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/benefits/bg05.png"),
+      background:
+        url("/tmod/img/benefits/bg05.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1691,7 +1702,8 @@ section {
   .panel-1 {
     height: 100%;
 
-    background: url("/tmod/img/technology/bg01-mob-2.png"),
+    background:
+      url("/tmod/img/technology/bg01-mob-2.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1703,7 +1715,8 @@ section {
     background-position-x: right;
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/technology/bg01-2.png"),
+      background:
+        url("/tmod/img/technology/bg01-2.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1729,7 +1742,8 @@ section {
   .panel-2 {
     height: 100%;
 
-    background: url("/tmod/img/technology/bg02-mob-2.png"),
+    background:
+      url("/tmod/img/technology/bg02-mob-2.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1741,7 +1755,8 @@ section {
     background-position: 100% 150%;
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/technology/bg02-2.png"),
+      background:
+        url("/tmod/img/technology/bg02-2.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1766,7 +1781,8 @@ section {
   .panel-3 {
     height: 100%;
 
-    background: url("/tmod/img/technology/bg03-mob.png"),
+    background:
+      url("/tmod/img/technology/bg03-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1778,7 +1794,8 @@ section {
     background-position: 100% 100%;
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/technology/bg03.png"),
+      background:
+        url("/tmod/img/technology/bg03.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1805,7 +1822,8 @@ section {
     height: 100%;
 
     grid-area: 3 / 1 / 4 / 3;
-    background: url("/tmod/img/technology/bg04-mob.png"),
+    background:
+      url("/tmod/img/technology/bg04-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1817,7 +1835,8 @@ section {
     background-position: 100% 0%;
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/technology/bg04.png"),
+      background:
+        url("/tmod/img/technology/bg04.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1843,7 +1862,8 @@ section {
   .panel-5 {
     height: 100%;
 
-    background: url("/tmod/img/technology/bg05-mob.png"),
+    background:
+      url("/tmod/img/technology/bg05-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1855,7 +1875,8 @@ section {
     background-position: 100% 100%;
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/technology/bg05.png"),
+      background:
+        url("/tmod/img/technology/bg05.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -1880,7 +1901,8 @@ section {
 
   .panel-6 {
     height: 100%;
-    background: url("/tmod/img/technology/bg06-mob.png"),
+    background:
+      url("/tmod/img/technology/bg06-mob.png"),
       radial-gradient(
         100% 327.72% at 0% 0%,
         #002345 0%,
@@ -1892,7 +1914,8 @@ section {
     background-position: 100% 100%;
 
     @media (min-width: 760px) {
-      background: url("/tmod/img/technology/bg06.png"),
+      background:
+        url("/tmod/img/technology/bg06.png"),
         radial-gradient(
           100% 327.72% at 0% 0%,
           #002345 0%,
@@ -2295,10 +2318,12 @@ section {
               font-weight: 600;
               font-size: clamp(18px, 6.4vw, 28px);
               line-height: 121%;
+              text-align: center;
               color: var(--black-color);
 
               @media (min-width: 760px) {
-                font-size: clamp(18px, 1.4vw, 28px);
+                font-size: clamp(18px, 1.4vw, 26px);
+                text-align: left;
               }
             }
 
@@ -2310,7 +2335,7 @@ section {
               color: var(--second-black-color);
 
               @media (min-width: 760px) {
-                font-size: clamp(14px, 1vw, 18px);
+                font-size: clamp(14px, 1vw, 16px);
               }
             }
 

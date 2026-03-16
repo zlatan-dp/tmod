@@ -55,7 +55,7 @@ export default function TmodLanding() {
 
     const data = {
       project: "TMOD",
-      to: ["a.nikitin@kivismart.com"],
+      to: ["y.dehtiarevskyi@kivismart.com"],
       subject: "TMOD",
       text: `Name: ${nameRef.current.value}, Email: ${emailRef.current.value}, Message: ${messageRef.current.value}`,
     };
@@ -95,7 +95,7 @@ export default function TmodLanding() {
           </div>
           <p className="submit-menu-message" ref={submitModalMessage}></p>
           <a
-            href="https://wa.me/48781464422?text=Hello%20Anton!%20I’d%20like%20to%20discuss%20a%20B2B%20inquiry%20about%20KidsTV.%20Could%20you%20please%20provide%20more%20information%20on%20partnership%20options%20and%20how%20we%20can%20move%20forward?%20Thank%20you!"
+            href="https://wa.me/380674455789?text=Hello%20Yevhen!%20I’d%20like%20to%20discuss%20a%20B2B%20inquiry%20about%20TMOD%20Technology.%20Could%20you%20please%20provide%20more%20information%20on%20partnership%20options%20and%20how%20we%20can%20move%20forward?%20Thank%20you!"
             target="_blank"
             className="submit-message-btn link display-none"
             ref={whatsup}
@@ -969,17 +969,17 @@ export default function TmodLanding() {
                   <img src="/tmod/img/contacts/photo.png" alt="manager photo" />
                 </div>
                 <div className="contact-info-wrap">
-                  <p className="manager-name">Anton Nikitin</p>
-                  <p className="manager-position">B2B Sales Director</p>
+                  <p className="manager-name">Yevhen Dehtiarevskiy</p>
+                  <p className="manager-position">Product Owner</p>
                   <div className="manager-socials-wrap">
                     <a
-                      href="mailto:a.nikitin@kivismart.com"
+                      href="mailto:y.dehtiarevskyi@kivismart.com"
                       className="manager-contact mail"
                     >
-                      a.nikitin@kivismart.com
+                      y.dehtiarevskyi@kivismart.com
                     </a>
                     <a
-                      href="https://wa.me/48781464422?text=Hello%20Anton!%20I’d%20like%20to%20discuss%20a%20B2B%20inquiry%20about%20KidsTV.%20Could%20you%20please%20provide%20more%20information%20on%20partnership%20options%20and%20how%20we%20can%20move%20forward?%20Thank%20you!"
+                      href="https://wa.me/380674455789?text=Hello%20Yevhen!%20I’d%20like%20to%20discuss%20a%20B2B%20inquiry%20about%20TMOD%20Technology.%20Could%20you%20please%20provide%20more%20information%20on%20partnership%20options%20and%20how%20we%20can%20move%20forward?%20Thank%20you!"
                       target="_blank"
                       className="manager-contact whatsup"
                     >
